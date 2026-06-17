@@ -1,4 +1,4 @@
-# 1. Command Injection (выполнение команд ОС)
+# Command Injection (выполнение команд ОС)
 
 ### Запрос 1
 ```http
