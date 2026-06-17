@@ -23,3 +23,45 @@ graphql?query=%7Bversion+repositoriesOrError%7B__typename+...+on+RepositoryConne
 /%3Cpath-to-image%3E
 ```
 Действие: запрос с плейсхолдером.
+
+### Запрос 5
+```http
+/autodiscover.json?@test.com/owa/?&Email=autodiscover/autodiscover.json%3F@test.com
+```
+Действие: попытка обхода или сканирования autodiscover.
+
+### Запрос 6
+```http
+/?command=getUserList&serverGroup=MainUsers&c2f=2620
+```
+Действие: запрос списка пользователей (возможно, легитимный или разведывательный).
+
+### Запрос 7
+```http
+/model-versions/get-artifact?path=random&name=UGomSw&version=2
+```
+Действие: запрос артефакта модели (информационный).
+
+### Запрос 8
+```http
+/fp30reg.dll?XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+Действие: переполнение буфера / DoS-тест, либо сканирование.
+
+### Запрос 9
+```http
+/shaper_helix3/js/%27+l+%27
+```
+Действие: возможная XSS-инъекция (маловероятная атака).
+
+### Запрос 10
+```http
+/rest/xxxxxxxxxxxxxxx/xxxxxxx?executeAsync
+```
+Действие: вызов асинхронного REST-метода (неясно).
+
+### Запрос 11
+```http
+/media/mod_gtranslate/js/%27+get_flag_src(current_lang)+%27
+```
+Действие: вероятная XSS.
