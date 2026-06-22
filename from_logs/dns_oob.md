@@ -5,3 +5,11 @@
 /dns-query?dns=SrMBAAABAAAAAAAAATEEb2RucwFtCmRuc21lYXN1cmUDdG9wAAABAAE
 ```
 Действие: тест на выполнение DNS-запроса к подконтрольному домену, используется для подтверждения слепых уязвимостей (SSRF, XXE, blind SQLi и т.п.).
+
+----
+
+### Запрос 2
+```bash
+/query?name=1.odns.m.dnsmeasure.top&type=A
+```
+Действие: аналогичное действие.
